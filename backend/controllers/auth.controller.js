@@ -1,5 +1,11 @@
 export async function signup(req, res) {
   res.send("Signup route");
+
+  // try {
+  //   const { name, email, password } = req.body;
+  // } catch (error) {
+  //   console.log(error);
+  // }
 }
 
 export async function login(req, res) {
