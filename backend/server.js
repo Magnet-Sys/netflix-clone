@@ -5,7 +5,7 @@ import express from "express"; // es6
 const app = express();
 
 app.get("/", (req, res) => {
-  res.send("Hello World");
+  res.send("Hello World!");
 });
 
 app.listen(5000, () => {
