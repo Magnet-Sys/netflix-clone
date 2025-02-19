@@ -1,21 +1,13 @@
 import express from "express"; // es6
+import dotenv from "dotenv";
+
 import authRoutes from "./routes/auth.route.js";
+
+dotenv.config();
 
 const app = express();
 
-// app.get("/api/v1/signup", (req, res) => {
-//   res.send("Signup route");
-// });
-
-// app.get("/api/v1/login", (req, res) => {
-//   res.send("Login route");
-// });
-
-// app.get("/api/v1/logout", (req, res) => {
-//   res.send("Logout route");
-// });
-
-// ("api/v1/signup");
+console.log("MONGO_URI", process.env.MONGO_URI);
 
 app.use("/api/v1/auth", authRoutes);
 
